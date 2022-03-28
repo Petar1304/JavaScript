@@ -10,7 +10,6 @@ const buildGraph = (edges) => {
     return graph
 }
 
-
 const shortestPath = (edges, src, dst) => {
     const graph = buildGraph(edges)
     const visited = new Set([ src ])
@@ -32,10 +31,6 @@ const shortestPath = (edges, src, dst) => {
     return 'No Path'
 }
 
-
-
-
-
 const edges = [
     ['w', 'x'],
     ['x', 'y'],
@@ -43,6 +38,5 @@ const edges = [
     ['z', 'v'],
     ['v', 'w'],
 ]
-
 
 console.log(shortestPath(edges, 'w', 'x'))
